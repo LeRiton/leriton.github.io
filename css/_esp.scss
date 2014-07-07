@@ -1,0 +1,116 @@
+$text-color: #40657B;
+$title-color: #B3D88C;
+$background-color: #061A24;
+$wrapper-width: 650px;
+
+@mixin formating-context {
+	overflow: hidden;
+}
+
+@mixin fixed-width-centered-block($width) {
+	width: $width;
+	margin: 0 auto;
+}
+
+body {
+	color: lighten($text-color, 15%);
+	text-shadow: 0 0 2px black;
+	font-family: "eb garamond", palatino, "times new roman", serif;
+	font-size: 17px;
+	background-color: $background-color;
+	@include formating-context;
+}
+
+div#container {
+	@include formating-context;
+	@include fixed-width-centered-block($wrapper-width);
+	&>header {
+		text-align: center;
+		margin-bottom: 2em;
+		line-height: 1em;
+		h2 {
+			font-style: italic;
+			padding-left: 10em;
+		}
+	}
+	div#main section > h1, div#main section > header h1 {
+		font-size: 1.5em;
+	}
+	footer {
+		text-align: center;
+		clear: both;
+	}
+}
+
+nav#marker_nav {
+	@include formating-context;
+	section {
+		float: left;
+		width: ($wrapper-width / 2) - 30px;
+		padding: 15px;
+	}
+	h1 {
+		font-size: 1.2em;
+		text-align: center;
+	}
+	ul {
+		list-style-type: circle;
+		margin-left: 1em;
+	}
+	p {
+		text-align: justify;
+	}
+}
+
+nav#index_nav {
+	text-align: center;
+}
+
+section#post_list {
+	h1 {
+		text-align: center;
+	}
+	article {
+		border-bottom: 1px solid darken($text-color, 5%);
+		header {
+			padding: 10px 0;
+			h1 {
+				display: inline;
+				font-size: 1em;
+			}
+			time {
+				color: darken($text-color, 5%);
+			}
+		}
+	}
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: $title-color;
+}
+
+section p, article p {
+	text-align: justify;
+}
+
+code, pre, blockquote {
+	background-color: lighten($background-color, 15%);
+}
+
+a {
+	text-decoration: none;
+	color: lighten($text-color, 50%);
+	&:visited {
+		color: lighten($text-color, 25%);
+	}
+	&:hover {
+		text-decoration: underline;
+		color: lighten($text-color, 75%);
+	}
+	&.remainder {
+		display: block;
+		text-align: right;
+		margin: 1em 0;
+		font-size: 1.5em;
+	}
+}

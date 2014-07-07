@@ -1,0 +1,34 @@
+---
+layout: default
+---
+<nav id="index_nav">
+	<a href="{{site.base_url}}/index.html" title="Retourner à la liste des articles">Retour à la liste des articles</a>
+</nav>
+
+<section id="post-list">
+	<header>
+		<h1>Billets de la catégorie {{page.category-name}}</h1>
+	</header>
+	{% for post in site.posts %}
+		{% for category_hash in post.category %}
+		{% for category in category_hash %}
+		{% if page.category-name == category[0] %}
+		<article class="blog-post list">
+			<header>
+				<h1 class="blog-post-title"><a href="{{site.base_url}}/{{post.url}}" title="Lire l'article {{post.title}}">{{post.title}}</a></h1>
+				<time class="blog-post-meta" datetime="{{ post.date | date:"%Y-%m-%dT%H:%M:%S+02:00" )}}" pubdate> &mdash; {{ post.date | date:"%d/%m/%Y") }}</time>
+			</header>
+			<div class="post-excerpt">
+				{% if post.excerpt != null %}
+					{{post.excerpt}}
+					<a href="{{site.base_url}}/{{post.url}}" title="Lire l'article {{post.title}}" class="remainder">Lire la suite...</a>
+				{% else %}
+					{{post.content}}
+				{% endif %}
+			</div>
+		</article>
+		{% endif %}
+		{% endfor %}
+		{% endfor %}
+	{% endfor %}
+</section>

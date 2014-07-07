@@ -1,0 +1,54 @@
+dt, q, .voice-over, .foreign, .publication-title {
+    font-style: italic;
+}
+blockquote, pre code {
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 20px 0 1em 80px;
+}
+pre code {
+    padding-left: 0;
+}
+pre {
+    overflow: auto;
+    width: 99.8%;
+}
+code {
+    font-family: Monaco, "Lucida Console", "Bitstream Vera Sans Mono", Courier, Monospace;
+    font-size: .8em;
+}
+pre code {
+    display: block;
+}
+abbr, acronym {
+    border-bottom: 1px dotted;
+    cursor: help;
+}
+sub {
+    vertical-align: sub;
+}
+sup {
+    vertical-align: super;
+}
+.biblio-author {
+    text-transform: uppercase;
+}
+.century, .biblio-author, sub, sup {
+    font-size: smaller;
+}
+q, .article-title {
+    quotes: "« " " »" "“ " " ”";
+}
+q:before, .article-title:before {
+    content: open-quote;
+}
+q:after, .article-title:after {
+    content: close-quote;
+}
+p.quote-author {
+    text-align: right;
+}
+
+li {
+	list-style: inherit;
+}
