@@ -1,3 +1,4 @@
+encoding: utf-8
 permalink: /:year/:month/:day/:title.html
 title: Écrits sous pression... Ou le blog de Riton
 base_url: http://blog.leriton.net

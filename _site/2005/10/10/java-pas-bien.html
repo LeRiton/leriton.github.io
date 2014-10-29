@@ -1,0 +1,108 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="fr"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>Java pas bien - Écrits sous pression... Ou le blog de Riton</title>
+	<meta name="description" content="TODO">
+	<meta name="author" content="LeRiton">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="alternate" type="application/atom+xml" title="Syndication des écrits sous pression" href="http://blog.leriton.net:8080/feed.xml" />
+	<link rel="stylesheet" href="http://blog.leriton.net:8080/css/style.css" />
+	<script src="http://blog.leriton.net:8080/js/libs/modernizr-2.0.6.min.js"></script>
+</head>
+
+<body>
+
+		<div id="container">
+			<header>
+				<hgroup>
+					<h1>Écrits sous pression...</h1>
+					<h2>Ou le blog de Riton</h2>
+				</hgroup>
+			</header>
+			
+			<nav id="index_nav">
+	<a href="http://blog.leriton.net:8080/index.html" title="Retourner à la liste des articles">Retour à la liste des articles</a>
+</nav>
+<div id="main" role="main">
+	<article>
+		<header>
+			<h1>Java pas bien</h1>
+			<time datetime="2005-10-10T23:55:00+02:00" pubdate>Le 10/10/2005</time>
+			<dl>
+				<dt>Catégorie</dt>
+				<dd><a href="http://blog.leriton.net:8080/category/36+15.html" title="Billets de la catégorie 36 15">36 15</a></dd>
+				<dt>Tags</dt>
+				<dd>
+				
+					<a href="http://blog.leriton.net:8080/tag/cours.html" title="Billets taggés cours">cours</a>
+				
+					<a href="http://blog.leriton.net:8080/tag/programmation.html" title="Billets taggés programmation">programmation</a>
+				
+				</dd>
+			</dl>
+		</header>
+		<p>
+Un diplôme d'info et réseau, c'est bien (pour moi en tout cas). Par contre, un diplôme d'info et réseau où on ne fait que de la prog... C'est quand même nettement plus casse burnes (sans vouloir être vulgaire évidement). En ce moment, vous l'aurez peut-être deviné, on est dans la me... Pardon, dans le Java.
+</p><p>
+Le sujet du projet est simple, voir trivial (un mot qu'il est bien pour les profs, voir <a href="/index.php/post/2005/09/13/c-est-trivial" title="Billet coup de gueule sur le concept de trivialité" hreflang="fr">un précédent billet</a>). Je ne résiste pas à l'envie de en vous mettre (en tout bien tout honneur) les premières lignes&nbsp;:
+</p>
+<blockquote><p><q>
+FourmIR2000 est un jeu de simulation de fourmilière. Deux fourmilières (une rouge et une noire) de la forêt Veur vivent trop proche et bêtement se font la guerre depuis maintenant quelques générations afin d'être les seules à régner sur le territoire.
+</q></p>
+</blockquote>
+<p>
+Le truc, c'est que le super jeu dont ils nous parlent... C'est nous qu'on doit le faire. La bonne nouvelle&nbsp;! Vous comprendrez donc les périodes de disettes de billets sur ce blog, les soirées sont courtes (et les nuits sont pleines de cauchemars à base de fourmis qui me montent dessus, me rentrent dedans par tous les orifices et me dévorent de l'intérieur... Le tout en énumérant les meilleurs passages de mon bouquin de Java).
+</p>
+<p>
+Une petite classe, pour ceux qui veulent comprendre l'état avancé de désespoir qui m'habite (vous avez vraiment des idées mal placées)&nbsp;:
+</p>
+<pre><code>
+import java.util.Random;
+public class RitonMark {
+    public static void main (String args[]) {
+        System.out.println("LeRiton obtient "+getRitonMark()+"/20 a son fuckin projet.");
+    }
+    public int getRitonMark() {
+        Random rand = new Random();
+        return rand.nextInt(20);
+    }
+}</code></pre>
+<p>
+Sur ce, j'y retourne. Un conseil pour les jeunes et insouciants étudiants qui passeraient par là&nbsp;: sauf si vous êtes un peu timbrés, évitez la prog, ça rend cinglé et c'est très dangereux pour les réserves de café mondiales.
+</p>
+<p class="voice-over">À suivre&nbsp;: <span class="foreign" xml:lang="en">I'm a busy man</span>.</p>
+
+	</article>
+</div>
+			
+			<footer>
+				<p>&copy; 2005, 2012 LeRiton &mdash; Propulsé par <a href="http://jekyllrb.com" title="Site officiel du générateur de site statique Jekyll, en anglais" lang="en">Jekyll</a></p>
+			</footer>
+		</div><!--! end of #container -->
+		
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+		<script>window.jQuery || document.write('<script src="http://blog.leriton.net:8080/js/libs/jquery-1.6.2.min.js"><\/script>')</script>
+
+		<script defer src="http://blog.leriton.net:8080/js/main.js"></script>
+		
+		<script>
+			window._gaq = [['_setAccount','UA-5351256-1'],['_trackPageview'],['_trackPageLoadTime']];
+			Modernizr.load({
+				load: ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js'
+			});
+		</script>
+
+
+		<!--[if lt IE 7 ]>
+			<script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+			<script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
+		<![endif]-->
+  
+	</body>
+
+</html>
