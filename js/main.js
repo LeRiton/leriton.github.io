@@ -1,10 +1,10 @@
 $(document).ready(function() {
-	$("section#post-list > article > div.post-excerpt").hide();
-	$("section#post-list > article > header").click(function(event) {
+	$("section#post_list > article > div.post_excerpt").hide();
+	$("section#post_list > article > header").click(function(event) {
 		event.preventDefault();
-		$("section#post-list > article > div.post-excerpt").slideUp();
-		if ($(this).next("div.post-excerpt").is(":hidden")) {
-			$(this).next("div.post-excerpt").slideDown();
+		$("section#post_list > article > div.post_excerpt").slideUp();
+		if ($(this).next("div.post_excerpt").is(":hidden")) {
+			$(this).next("div.post_excerpt").slideDown();
 		}
 	});
 });
